@@ -13,6 +13,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            box-sizing: border-box; /* Added for better mobile padding control */
         }
 
         /* Container for content, centered with specific padding for mobile and desktop */
@@ -95,21 +96,44 @@
         strong {
             color: #ffffff;
         }
-	
-.footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #999;
-    }
 
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        /* Media queries for mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Smaller padding on smaller screens */
+            }
+
+            .container {
+                padding: 20px; /* Smaller container padding */
+                margin: 10px auto;
+            }
+
+            h1 {
+                font-size: 2em; /* Adjusted font size for mobile */
+            }
+
+            h2 {
+                font-size: 1.4em; /* Adjusted font size for mobile */
+                margin-top: 30px;
+            }
+
+            h3 {
+                font-size: 1.1em; /* Adjusted font size for mobile */
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Privacy Policy for Basketball Rush</h1>
-
 
         <p>At <strong>Basketball Rush</strong>, we're committed to protecting your privacy. This policy explains how we handle information related to our Facebook page at <a href="https://web.facebook.com/BasketballRush" target="_blank" rel="noopener noreferrer">https://web.facebook.com/BasketballRush</a>.</p>
         <p>Please note that this policy applies specifically to our page. Your use of Facebook is also governed by Meta's own Data Policy, which we encourage you to review.</p>
@@ -170,8 +194,8 @@
     </div>
 
 <div class="footer">
-      &copy; 2025 Basketball Rush. All rights reserved.
-    </div>
+    &copy; 2025 Basketball Rush. All rights reserved.
+</div>
 
 </body>
 </html>
